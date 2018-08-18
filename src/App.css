@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 100px;
+
+}
+
+.App-header {
+  background-color: #222;
+  background-image: url(https://img00.deviantart.net/5f10/i/2012/070/c/a/pokemon_background_by_baddarn-d4sel13.png);
+  background-position: bottom left;
+  height: 250px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.selectBox{
+  background-color: lightskyblue;
+}
+
+.cardBox{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+ 
+}
+.cardSize{
+  height: 230;
+  width: 330;
+}
+
+.menuIcon{
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
