@@ -1,12 +1,16 @@
 import React from 'react';
 
-const List = props => {
-    return props.list.map((val, i) => (
+const List = props =>
+{ console.log(props)
+  return (
+    props.list.filter((val, i)=> { 
+      return val.supertype===props.search && val.types[0]===props.types
+    }).map((val, i) => {
+      return (
       <div>
         <img src={val.imageUrl} key={val.id} alt={val.name}/>
-        
-      </div>
-    ));
+      </div>)
+    }))
 }
 
 export default List;
