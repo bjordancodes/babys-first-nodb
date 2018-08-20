@@ -1,0 +1,46 @@
+.menuIcon{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+
+  .exitButton{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  #flyoutMenu {
+      width: 50vw;
+      height: 100vh;
+      background-color: #FFE600;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transition: transform .3s
+        cubic-bezier(0, .52, 0, 1);
+        overflow: scroll;
+        z-index: 100;
+  }
+
+  #flyoutMenu.hide {
+      transform: translate3d(-100vw, 0, 0)
+  }
+
+  flyoutMenu.show{
+      transform: translate3d(0vw, 0, 0);
+      overflow: hidden;
+  }
+
+  flyoutMenu h2 {
+      color: #333;
+      margin-left: 15px;
+      text-decoration: none;
+  }

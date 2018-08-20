@@ -1,0 +1,72 @@
+.addButton{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+.deleteButton{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 70px;
+    z-index: 10;
+    cursor: pointer;
+}
+  
+.savedDeckFormat{
+    height: 300px;
+    width: auto;
+    overflow: auto;
+
+}
+.DeckInputFormat{
+    height: auto;
+    width: 80vw;
+
+}
+
+.deckContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap
+}
+
+.deckParentContainer{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80wv;
+}
+
+.deckChildContainer{
+    border: 2px;
+    border-radius: 11px;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    overflow: auto;
+    background-color: cornflowerblue;
+    margin: 10px;
+
+    
+}
+
+.newInputContainer{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100px;
+    width: 500px;
+    flex-wrap: nowrap;
+
+}
+
+inputBox{
+    width: 20vw;
+    margin: 10px;
+}

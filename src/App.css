@@ -1,5 +1,9 @@
+HTML{
+  background-color: lightblue;
+}
 .App {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .App-logo {
@@ -12,13 +16,15 @@
   background-color: #222;
   background-image: url(https://img00.deviantart.net/5f10/i/2012/070/c/a/pokemon_background_by_baddarn-d4sel13.png);
   background-position: bottom left;
-  height: 250px;
+  height: 320px;
   padding: 20px;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .App-title {
   font-size: 1.5em;
+  margin: 50px;
 }
 
 .App-intro {
@@ -31,19 +37,40 @@
 }
 
 .selectBox{
-  background-color: lightskyblue;
+  font-family: 'Arial';
+  display: inline-block;
+  width: 40vw;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0px outset #000000;
+  border-radius: 11px;
+  background: cornflowerblue;
+  color:white;
+  margin: 10px;
 }
 
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  border-radius: 11px;
+  background-color: cornflowerblue;
+  width: 20vw;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  color: white;
+}
 .cardBox{
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-start;
+  margin-left: 5vw;
  
 }
 .cardSize{
   height: 230;
   width: 330;
+  position: relative;
 }
 
 .menuIcon{
@@ -52,4 +79,55 @@
   position: fixed;
   top: 10px;
   left: 10px;
+  cursor: pointer;
+}
+
+.addButton{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.deckList{
+  height: 200px;
+  background-color: cornflowerblue;
+  width: 40vw;
+  margin: 0 auto;
+  overflow: auto;
+  border-radius: 11px;
+}
+
+ul {
+  list-style: none;
+}
+
+.instructions{
+  height: 200px;
+  width: 400px;
+  overflow: auto;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  scrollbar-face-color: lightblue;
+}
+.instructionPic{
+  height: 20px;
+  width: 20px;
+}
+
+.buttonClass{
+  height: auto;
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: white;
+  background-color: cornflowerblue;
+  border-radius: 11px;
+  padding: 10px;
+  margin: 10px 10px 20px 10px;
+
 }
